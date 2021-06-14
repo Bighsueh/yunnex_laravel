@@ -19,19 +19,19 @@
 <table class="col-12">
     <tr>
         <td class="p-2 text-center">
-            <a href="#" style="text-decoration:none;color:black">
+            <a href="{{route('intro_front')}}" style="text-decoration:none;color:black">
                 <h4>產品介紹</h4>
                 <img class="col-8" src="{{asset('assets/images/menu/intro.png')}}" style="border-radius:6px">
             </a>
         </td>
         <td class="p-2 text-center">
-            <a href="#" style="text-decoration:none;color:black">
+            <a href="{{route('story_front')}}" style="text-decoration:none;color:black">
                 <h4>品牌故事</h4>
                 <img class="col-8" src="{{asset('assets/images/menu/story.png')}}" style="border-radius:6px">
             </a>
         </td>
         <td class="p-2 text-center">
-            <a href="#" style="text-decoration:none;color:black">
+            <a href="{{route('discount_front')}}" style="text-decoration:none;color:black">
                 <h4>折扣券區</h4>
                 <img class="col-8" src="{{asset('assets/images/menu/discount.png')}}" style="border-radius:6px">
             </a>
@@ -40,19 +40,19 @@
     <tr></tr>
     <tr>
         <td class="p-2 text-center">
-            <a href="#" style="text-decoration:none;color:black">
+            <a href="{{route('sign_front')}}" style="text-decoration:none;color:black">
                 <h4>簽到區</h4>
                 <img class="col-8" src="{{asset('assets/images/menu/sign.png')}}" style="border-radius:6px">
             </a>
         </td>
         <td class="p-2 text-center">
-            <a href="#" style="text-decoration:none;color:black">
-                <h4>遊戲</h4>
+            <a href="{{route('game_front')}}" style="text-decoration:none;color:black">
+                <h4>遊戲區</h4>
                 <img class="col-8" src="{{asset('assets/images/menu/game.png')}}" style="border-radius:6px">
             </a>
         </td>
         <td class="p-2 text-center">
-            <a href="#" style="text-decoration:none;color:black">
+            <a href="{{route('order_front')}}" style="text-decoration:none;color:black">
                 <h4>下單區</h4>
                 <img class="col-8" src="{{asset('assets/images/menu/order.png')}}" style="border-radius:6px">
             </a>
