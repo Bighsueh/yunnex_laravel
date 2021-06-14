@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <a href="{{route('story_front')}}">
+    <a href="{{route('story_content')}}">
         <img style="width: 100%" src="{{asset('assets/images/front/story.JPG')}}">
     </a>
 </div>

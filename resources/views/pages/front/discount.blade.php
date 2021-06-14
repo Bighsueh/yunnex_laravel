@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <a href="{{route('discount_front')}}">
+    <a href="{{route('discount_content')}}">
         <img style="width: 100%" src="{{asset('assets/images/front/discount.JPG')}}">
     </a>
 </div>

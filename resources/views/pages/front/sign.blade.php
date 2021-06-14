@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <a href="{{route('sign_front')}}">
+    <a href="{{route('sign_content')}}">
         <img style="width: 100%" src="{{asset('assets/images/front/sign.JPG')}}">
     </a>
 </div>
