@@ -139,7 +139,7 @@
             sign_check = true;
             // document.cookie = "discount"
         }else{
-            window.alert('今日已經簽到囉~');
+            window.alert('今日已經抽過囉~');
         }
 
     }
