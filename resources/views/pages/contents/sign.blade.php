@@ -136,7 +136,7 @@
                     window.alert('很抱歉沒抽中，下次再試吧!!');
                     break;
             }
-
+            sign_check = true;
             // document.cookie = "discount"
         }else{
             window.alert('今日已經簽到囉~');
