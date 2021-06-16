@@ -53,23 +53,57 @@
                  src="{{asset('assets/images/contents/twice85percent.png')}}"/>
             <img onclick="get_discount('50dollor_discount')" id="50dollor_discount" class="center-block d-block text-right" style="display: inline-block; width: 20%"
                  src="{{asset('assets/images/contents/50dollor_discount.png')}}"/>
-            <img onclick="get_discount('next_time')" id="next_time" class="center-block d-block text-right" style="display: inline-block; width: 20%"
+            <img onclick="window.alert('再接再厲，下次一定會抽中的!')" id="next_time" class="center-block d-block text-right" style="display: inline-block; width: 20%"
                  src="{{asset('assets/images/contents/next_time.png')}}"/>
     </div>
 </div>
 <script>
-    var discount_check = false;
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    function removeCookie() {
+        document.cookie = "discount_item = ";
+    }
+
     function get_discount(img_name) {
+        let opa = document.getElementById(img_name).style.opacity;
+        if (opa !== "1") {
+            return;
+        }
         if(!discount_check){
             if(window.confirm('您確定要使用折價券嗎? \n *提醒您每日只能使用一張折價券')){
                 document.getElementById(img_name).style.opacity = "0.2";
                 discount_check = true;
+                removeCookie();
             }
         }else{
             window.alert('您今日已到達折價券使用上限!!');
         }
 
     }
+
+    var discount_check = false;
+    document.getElementById('10_percent_off').style.opacity = "0.2";
+    document.getElementById('twice85percent').style.opacity = "0.2";
+    document.getElementById('50dollor_discount').style.opacity = "0.2";
+    document.getElementById('next_time').style.opacity = "0.2";
+
+    if(getCookie('discount_item') === '10_percent_off'){
+        document.getElementById('10_percent_off').style.opacity = "1";
+    }
+    if(getCookie('discount_item') === 'twice85percent'){
+        document.getElementById('twice85percent').style.opacity = "1";
+    }
+    if(getCookie('discount_item') === '50dollor_discount'){
+        document.getElementById('50dollor_discount').style.opacity = "1";
+    }
+    if(getCookie('discount_item') === 'next_time'){
+        document.getElementById('next_time').style.opacity = "1";
+    }
+
 
 
 </script>
