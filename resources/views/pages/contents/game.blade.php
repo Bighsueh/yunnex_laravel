@@ -11,17 +11,16 @@
 </head>
 <body style="background-color: #DBEECE">
 
-<div class=""
+<div class="col row m-1"
      style="background-color: #DBEECE;">
-    <div class="" style="display: inline-block;float: left;align-items: center">
+    <div class="col-2 text-left">
         <a href="{{route('home')}}"><img class="" style="height:80px;"
                                          src="{{asset('assets/images/contents/rollback.png')}}"/></a>
     </div>
-    <div class=""
-         style="display:inline-block ;align-items: center;margin: 2px;margin-left:30%;">
-        <h2 class="" style="color: #00357B;">遊戲區</h2>
+    <div class="col-8 align-self-center" >
+        <h2 class="text-center" style="color: #00357B;">遊戲區</h2>
     </div>
-    <div class="" style="display: inline-block;float: right;align-items: center">
+    <div class="col-2" >
         <img class="" style="height:80px;" src="{{asset('assets/images/yunnex_logo_transparent.png')}}"/>
 
     </div>
@@ -35,12 +34,12 @@
         <a id="time"><a>
                 <a id="score"><a>
     </div>
-    <div class="peanut_game" style="position: absolute;left:20px">
+    <div class="peanut_game" style="position: absolute;left:20px;">
 
-        <img id="bg" class="bg" width="650px" src="{{asset('assets/images/contents/game/background.png')}}"style="
+        <img id="bg" class="bg" width="650px" src="{{asset('assets/images/contents/game/background.png')}}"style='
             position: absolute;
             z-index: 0;
-        "/>
+        '/>
         <img id="pn_1" class="pn" width="65px" src="{{asset('assets/images/contents/game/peanut.png')}}" style="
             position: absolute;
              top: 150px;

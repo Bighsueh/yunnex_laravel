@@ -7,29 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet"/>
     <script src="{{asset('assets/js/bootstrap/bootstrap.js')}}"></script>
-    <title>Document</title>
+    <title>產品介紹</title>
 </head>
 <body style="background-color: #DBEECE">
 
-<div class=""
+<div class="col row "
      style="background-color: #DBEECE;">
-    <div class="" style="display: inline-block;float: left;align-items: center">
+    <div class="col-2 text-left">
         <a href="{{route('home')}}"><img class="" style="height:80px;"
                                          src="{{asset('assets/images/contents/rollback.png')}}"/></a>
     </div>
-    <div class=""
-         style="display:inline-block ;align-items: center;margin: 2px;margin-left:30%;">
-        <h2 class="" style="color: #00357B;">產品介紹</h2>
+    <div class="col-8 align-self-center">
+        <h2 class="text-center" style="color: #00357B;">產品介紹</h2>
     </div>
-    <div class="" style="display: inline-block;float: right;align-items: center">
-        <img class="" style="height:80px;" src="{{asset('assets/images/yunnex_logo_transparent.png')}}"/>
+    <div class="col-2">
+        <img class="text-center" style="height:80px;" src="{{asset('assets/images/yunnex_logo_transparent.png')}}"/>
     </div>
 </div>
 <hr class="text-black" style="border-top: 3px solid black;width: 100%"/>
 <div class="text-center">
     <label class="label bg-warning ">
-        <h4>
-            群　　聚　　故　　事
+        <h4>群　聚　故　事
         </h4>
     </label>
 </div>
@@ -42,14 +40,19 @@
 
         </h4>
     </div>
-    <div class="container row">
-        <img class="center-block justify-content-center mx-auto d-block" style="width: 500px"
+    <div class="container text-center justify-content-center">
+        <img class="center-block justify-content-center mx-auto d-block text-center" style="width: 100%"
              src="{{asset('assets/images/contents/family.png')}}"/>
 
     </div>
-    <a class="text-nowrap" href="{{route('story2_content')}}"><img class=""
-                                        style="width: 10%;display: inline-block; margin-right: 30%;float: right"
-                                        src="{{asset('assets/images/contents/next_page.png')}}"/></a>
+    <div class="text-center">
+        <a class="justify-content-center" href="{{route('story2_content')}}">
+            <img class=""
+                 style="height: 50px; ;"
+                 src="{{asset('assets/images/contents/next_page.png')}}"/></a>
+    </div>
+
+
 
 </div>
 

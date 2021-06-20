@@ -7,29 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet"/>
     <script src="{{asset('assets/js/bootstrap/bootstrap.js')}}"></script>
-    <title>Document</title>
+    <title>產品介紹</title>
 </head>
 <body style="background-color: #DBEECE">
 
-<div class=""
+<div class="col row m-1"
      style="background-color: #DBEECE;">
-    <div class="" style="display: inline-block;float: left;align-items: center">
+    <div class="col-2 text-left">
         <a href="{{route('home')}}"><img class="" style="height:80px;"
                                          src="{{asset('assets/images/contents/rollback.png')}}"/></a>
     </div>
-    <div class=""
-         style="display:inline-block ;align-items: center;margin: 2px;margin-left:30%;">
-        <h2 class="" style="color: #00357B;">產品介紹</h2>
+    <div class="col-8 align-self-center" >
+        <h2 class="text-center" style="color: #00357B;">產品介紹</h2>
     </div>
-    <div class="" style="display: inline-block;float: right;align-items: center">
+    <div class="col-2" >
         <img class="" style="height:80px;" src="{{asset('assets/images/yunnex_logo_transparent.png')}}"/>
     </div>
 </div>
+
 <hr class="text-black" style="border-top: 3px solid black;width: 100%"/>
 <div class="text-center">
     <label class="label bg-warning ">
     <h4>
-        　　長　　老　　花　　生　　的　　故　　事　　
+        　長　老　花　生　的　故　事　　
     </h4>
     </label>
 </div>
@@ -43,16 +43,16 @@
         </h4>
     </div>
     <div class= "text-nowrap col-12 row container text-center justify-content-center" >
-        <div class="">
-            <img class="center-block d-block text-left" style="display: inline-block"
+        <div class="col col-4">
+            <img class="center-block d-block text-left"
                  src="{{asset('assets/images/contents/hula_peanuts.png')}}"/>
         </div>
-        <div class="">
-            <img class="center-block d-block text-center" style="display: inline-block"
+        <div class="col col-4">
+            <img class="center-block d-block text-center"
                  src="{{asset('assets/images/contents/hula_peanuts.png')}}"/>
         </div>
-        <div class="">
-            <img class="center-block d-block text-right" style="display: inline-block"
+        <div class="col col-4">
+            <img class="center-block d-block text-right"
                  src="{{asset('assets/images/contents/hula_peanuts.png')}}"/>
         </div>
 
